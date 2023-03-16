@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block 
+    content %}
+    
+    <p>여기는 Throw입니다.</p>
+
+    <form action="{% url 'myapp:catch' %}">
+        <label for="message">Throw</label>
+        <input type="text" id="message" name = "message">
+        <input type="submit">
+    </form>
+    
+    {% endblock 
+    content %}
